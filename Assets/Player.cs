@@ -31,11 +31,18 @@ public class Player : MonoBehaviour
         // Apply movement
         transform.position += (Vector3)currentVelocity * Time.deltaTime;
 
+        // Flip sprite based on movement direction
+        if (input.x > 0.1f)
+            transform.localScale = new Vector3(-1, 1, 1);
+        else if (input.x < -0.1f)
+            transform.localScale = new Vector3(1, 1, 1);
+
         // Trigger animation
         bool isMoving = input.magnitude > 0.1f;
         if (animator != null)
         {
             animator.SetBool("moving", isMoving);
+            Debug.Log("Player is " + (isMoving ? "moving" : "idle"));
         }
     }
 }
