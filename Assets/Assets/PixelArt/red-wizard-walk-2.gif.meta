@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red-wizard-walk-2_0: 1349678046582402455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
