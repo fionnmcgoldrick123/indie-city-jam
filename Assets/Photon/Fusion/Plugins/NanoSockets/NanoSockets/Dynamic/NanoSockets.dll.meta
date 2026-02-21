@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b3f94104f169cc4e84342c38a1da2e3
+guid: 97dbb2b4c5d67894381958ef748f2a74
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -16,20 +16,29 @@ PluginImporter:
     second:
       enabled: 0
       settings:
-        Exclude Android: 1
+        Exclude Android: 0
         Exclude Editor: 0
+        Exclude GameCoreScarlett: 0
+        Exclude GameCoreXboxOne: 0
         Exclude Linux64: 0
         Exclude OSXUniversal: 0
+        Exclude PS4: 1
+        Exclude PS5: 1
+        Exclude Switch: 1
+        Exclude VisionOS: 1
         Exclude WebGL: 1
         Exclude Win: 0
         Exclude Win64: 0
         Exclude WindowsStoreApps: 1
+        Exclude XboxOne: 1
         Exclude iOS: 1
+        Exclude tvOS: 1
   - first:
       Android: Android
     second:
-      enabled: 0
+      enabled: 1
       settings:
+        AndroidSharedLibraryType: Executable
         CPU: ARMv7
   - first:
       Any: 
@@ -43,19 +52,29 @@ PluginImporter:
       settings:
         CPU: AnyCPU
         DefaultValueInitialized: true
-        OS: Windows
+        OS: AnyOS
+  - first:
+      GameCoreScarlett: GameCoreScarlett
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      GameCoreXboxOne: GameCoreXboxOne
+    second:
+      enabled: 1
+      settings: {}
   - first:
       Standalone: Linux64
     second:
       enabled: 1
       settings:
-        CPU: None
+        CPU: AnyCPU
   - first:
       Standalone: OSXUniversal
     second:
       enabled: 1
       settings:
-        CPU: None
+        CPU: AnyCPU
   - first:
       Standalone: Win
     second:
@@ -69,6 +88,15 @@ PluginImporter:
       settings:
         CPU: x86_64
   - first:
+      VisionOS: VisionOS
+    second:
+      enabled: 0
+      settings:
+        AddToEmbeddedBinaries: false
+        CPU: ARM64
+        CompileFlags: 
+        FrameworkDependencies: 
+  - first:
       Windows Store Apps: WindowsStoreApps
     second:
       enabled: 0
@@ -76,14 +104,22 @@ PluginImporter:
         CPU: AnyCPU
         DontProcess: false
         PlaceholderPath: 
-        SDK: AnySDK
-        ScriptingBackend: AnyScriptingBackend
+        SDK: UWP
+        ScriptingBackend: Il2Cpp
   - first:
       iPhone: iOS
     second:
       enabled: 0
       settings:
         AddToEmbeddedBinaries: false
+        CPU: AnyCPU
+        CompileFlags: 
+        FrameworkDependencies: 
+  - first:
+      tvOS: tvOS
+    second:
+      enabled: 0
+      settings:
         CPU: AnyCPU
         CompileFlags: 
         FrameworkDependencies: 
